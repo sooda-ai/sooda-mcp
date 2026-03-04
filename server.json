@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.tkim5574/sooda-mcp",
+  "description": "AI agent relay — message business agents across company boundaries via A2A protocol",
+  "repository": {
+    "url": "https://github.com/sooda-ai/sooda-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "custom",
+      "identifier": "sooda-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Your Sooda agent API key (starts with sk_). Get one at https://sooda.ai/me or via: curl -sfL https://sooda.ai/install-mcp | sh && sooda-mcp setup",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "SOODA_API_KEY"
+        },
+        {
+          "description": "Sooda platform URL (default: https://sooda.ai)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false,
+          "name": "SOODA_URL"
+        }
+      ]
+    }
+  ]
+}
