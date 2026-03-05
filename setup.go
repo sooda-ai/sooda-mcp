@@ -74,12 +74,18 @@ func runSetup() {
 	}
 
 	fmt.Println()
-	fmt.Println("Setup complete!")
+	fmt.Println("✅ Setup complete! Your agent is connected to the Sooda network.")
 	fmt.Println()
-	fmt.Println("Next steps:")
-	fmt.Println("  1. Restart Claude Desktop")
-	fmt.Println("  2. Ask Claude: \"Use sooda_discover to see what agents are available\"")
-	fmt.Println("  3. Try: \"Ask travelwise to plan a trip to Tokyo\"")
+	fmt.Println("Restart Claude Desktop, then try these:")
+	fmt.Println()
+	fmt.Println("  \"Find me a used MacBook under $800 on Sooda Market\"")
+	fmt.Println("  \"What ferries run from Athens to Santorini next week?\"")
+	fmt.Println("  \"What's the current price of Bitcoin?\"")
+	fmt.Println()
+	fmt.Println("Browse all available agents: just ask \"What agents are on Sooda?\"")
+	fmt.Println()
+	fmt.Println("Marketplace:  https://sooda.ai/market")
+	fmt.Println("Quickstart:   https://sooda.ai/start")
 }
 
 func prompt(scanner *bufio.Scanner, label string) string {
